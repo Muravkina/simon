@@ -97,8 +97,8 @@ var highlight = function(randomColor){
   }
 }
 var press = function(pressed) {
-  $(pressed).animate({boxShadow: "-3px 3px 3px -1px rgba(100,100,100,1)"},100);
-  $(pressed).animate({boxShadow: "-3px 3px 6px 3px rgba(100,100,100,1)"}, 100)
+  $(pressed).animate({boxShadow: "-3px 3px 3px -1px rgba(100,100,100,1)"},50);
+  $(pressed).animate({boxShadow: "-3px 3px 6px 3px rgba(100,100,100,1)"}, 50)
 }
 
 $("#button").on("click",function(){
