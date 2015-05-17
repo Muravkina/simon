@@ -6,7 +6,7 @@ $("#button").on("click", function(){
 });
 var Round = function() {
   this.round = 0;
-  this.showingArray = []
+  this.showingArray = [];
   this.$arrayColors = $(".colors div");
   this.clickedArray = [];
   this.matched = false;
@@ -32,8 +32,8 @@ Round.prototype.blink = function() {
   }
 }
 Round.prototype.click = function(event) {
-  var corruption = event.target;
-  press(corruption);
+  var pressed = event.target;
+  press(pressed);
   this.clickedArray.push(event.target);
   this.check();
   if (this.matched) {
@@ -96,10 +96,11 @@ var highlight = function(randomColor){
     $("#yellow").animate({"left" : "-=10px", "top" : "-=10px"}, "fast")
   }
 }
-var press = function(corruption) {
-$(corruption).animate({boxShadow: "-3px 3px 3px -1px rgba(100,100,100,1)"},100);
-$(corruption).animate({boxShadow: "-3px 3px 6px 3px rgba(100,100,100,1)"}, 100)
+var press = function(pressed) {
+  $(pressed).animate({boxShadow: "-3px 3px 3px -1px rgba(100,100,100,1)"},100);
+  $(pressed).animate({boxShadow: "-3px 3px 6px 3px rgba(100,100,100,1)"}, 100)
 }
+
 $("#button").on("click",function(){
   $("button").animate({boxShadow: "box-shadow: inset 0px 0px 18px 5px rgba(179,175,179,1);"})
 })
