@@ -1,5 +1,5 @@
-##Simon Says##
 ###Dasha Murauyova###
+##Simon Says##
 
 Simon says is a childhood game, favourite all around the world.
 It generates a growing sequence of colors, that the player has to repeat.
